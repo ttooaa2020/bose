@@ -44,4 +44,28 @@ $(function () {
     $tabCon.eq(index).show();
   }
   // 탭 메뉴 끝
+
+  // 고정 스크롤
+  gsap.registerPlugin(ScrollTrigger);
+
+  const accidentItems = gsap.utils.toArray(".accident-list  li");
+
+  accidentItems.forEach((item) => {
+    gsap.from(item, {
+      scrollTrigger: {
+        trigger: item,
+        // markers: true,
+        start: "top 50%",
+        end: "top 50%",
+
+        toggleActions: "play none reverse none",
+      },
+
+      y: 100,
+      autoAlpha: 0.5,
+      filter: "grayscale(1)",
+      duration: 1,
+      ease: "power4.out",
+    });
+  });
 });

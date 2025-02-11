@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* visual */
-.visual {
+.main-visual {
   position: relative;
   height: 90rem;
   overflow: hidden;
@@ -9,7 +9,7 @@
   margin-bottom: 0;
 }
 
-.visual figure {
+.main-visual figure {
   height: 100%;
 }
 
@@ -32,13 +32,13 @@
   font-size: clamp(4rem, 2.6041vw, 5rem);
 }
 
-.visual figure img {
+.main-visual figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.visual::after {
+.main-visual::after {
   content: "";
   position: absolute;
   top: 0;
@@ -54,7 +54,7 @@
 /* usage-guide */
 .usage-guide {
   margin: 0;
-  background: var(--main-color);
+  background: var(--Darck-100);
   text-align: center;
 }
 
@@ -193,22 +193,12 @@
   justify-content: space-between;
 
   width: 32rem;
-  height: 17.6rem;
+  height: 17rem;
   border-radius: 3rem;
   padding: 3.6rem 4.5rem;
 
   background: var(--btn);
   color: var(--Light-100);
-}
-
-.product-cards li a::after {
-  content: "";
-  width: 8.5rem;
-  height: 8.5rem;
-  margin-top: 15rem;
-
-  margin-top: 38.5263%;
-  width: 17.7083%;
 }
 
 .product-cards dl dt {
