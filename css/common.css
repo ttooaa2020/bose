@@ -88,7 +88,7 @@ header {
 
 header nav {
   display: flex;
-  height: 14.8rem;
+  height: 8rem;
   /* background: #5f5f; */
   justify-content: space-between;
   align-items: center;
@@ -236,6 +236,10 @@ header nav {
   display: block;
   padding: 2.5rem 0;
   text-align: center;
+}
+
+.mobile-gnb li a:hover {
+  color: var(--Darck-100);
 }
 
 /* 모바일 메뉴 end */
